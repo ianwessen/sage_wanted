@@ -13,11 +13,10 @@ header {
 header > div {
   @include container(960px);
 }
-header .sw-logo {
+header svg {
   float: left;
-  line-height: $header-height;
-  font-size: 1.6em;
-  font-family: 'Raleway';
+  width: 200px;
+  height: $header-height;
 }
 header .sw-logo span:first-of-type {
   font-weight: bold;
