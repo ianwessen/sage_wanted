@@ -1,0 +1,61 @@
+@import 'susy';
+
+$header-height: 50px;
+
+header {
+  position: absolute;
+  height: $header-height;
+  padding: 0 1em;
+  width: 100%;
+  color: $green-forestGreen;
+  background: $white;
+}
+header > div {
+  @include container(960px);
+}
+header .sw-logo {
+  float: left;
+  line-height: $header-height;
+  font-size: 1.6em;
+  font-family: 'Raleway';
+}
+header .sw-logo span:first-of-type {
+  font-weight: bold;
+}
+header nav {
+  float: right;
+}
+header,
+footer {
+  ul, 
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+header ul {
+  list-style-type: none;
+}
+header li {
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: $header-height;
+  transition: 0.3s;
+}
+header nav a {
+  padding: 0 0.3em;
+  line-height: $header-height/1.5;
+  &:hover {
+    color: darken($green-forestGreen,10%);
+    border-color: transparent;
+  }
+}
+header .sign-in {
+  padding: 0 1em;
+  border: 1px solid $green-forestGreen;
+  border-radius: 100px;
+  &:hover {
+    background: lighten($green-gumLeaf,20%);
+    border-color: $green-forestGreen;
+  }
+}

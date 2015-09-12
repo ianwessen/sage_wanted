@@ -1,0 +1,40 @@
+@import 'susy';
+
+$footer-height: 80px;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: $footer-height;
+  padding: 0 1em;
+  width: 100%;
+  color: lighten($green-gumLeaf, 10%);
+  background: $green-forestGreen;
+}
+footer a {
+  color: lighten($green-gumLeaf, 10%);
+  &:hover {
+    color: #fff;
+  }  
+}
+footer div {
+  @include container(960px);
+  height: $footer-height;
+}
+footer span {
+  float: right;
+  line-height: $footer-height;
+}
+footer nav {
+  float: left;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  display: inline-block;
+  line-height: $footer-height;
+  padding: 0 0.5em;
+}
