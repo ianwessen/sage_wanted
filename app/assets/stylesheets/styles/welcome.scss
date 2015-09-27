@@ -4,8 +4,72 @@
 
 @import 'susy';
 
-section.welcome-hero {
-  @include container(960px);
+.welcome-hero.page {
   text-align: center;
-  padding-top: 30vh;
+  @include container(960px);
+}
+.welcome-hero .animation {
+  position: absolute;
+}
+.welcome-hero .side-pane {
+  width: 50%;
+  float: left;
+}
+.welcome-hero .side-pane:first-child {
+  padding-top: 15vh;
+}
+.welcome-hero .side-pane:last-child {
+
+}
+.welcome-hero .sw-network {
+  max-width: 90%;
+  margin: 100px auto 0;
+}
+.welcome-hero .form-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 3em 4em 1em;
+  width: 480px;
+  max-width: 100%;
+  background: $white;
+  p {
+    margin-bottom: 1em;
+  }
+  h5 {
+    color: $green-forestGreen;
+  }
+  h6 {
+    @include abs-center(180px);
+    bottom: -20px;
+    color: $green-forestGreen;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: default;
+  }
+}
+form.sign-up {
+  opacity: 1;
+  transition: 0.3s;
+  input[type="email"] {
+    width: 80%;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $green-forestGreen;
+  }
+}
+form.sign-up.complete {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+@media (max-width: 800px) {
+  .welcome-hero .side-pane:first-child {
+    width: 100%;
+  }
+  .welcome-hero .side-pane:last-child {
+    display: none;
+  }
+  .welcome-hero .form-wrapper {
+    
+  }
 }

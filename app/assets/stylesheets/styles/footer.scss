@@ -4,6 +4,7 @@ $footer-height: 80px;
 
 footer {
   position: absolute;
+  z-index: 10;
   bottom: 0;
   height: $footer-height;
   padding: 0 1em;

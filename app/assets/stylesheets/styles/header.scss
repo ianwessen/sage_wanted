@@ -4,14 +4,15 @@ $header-height: 50px;
 
 header {
   position: absolute;
+  z-index: 10;
   height: $header-height;
   padding: 0 1em;
   width: 100%;
-  color: $green-forestGreen;
-  background: $white;
+  background: transparent;
 }
 header > div {
   @include container(960px);
+  height: $header-height;
 }
 header svg {
   float: left;
@@ -44,17 +45,46 @@ header li {
 header nav a {
   padding: 0 0.3em;
   line-height: $header-height/1.5;
+}
+
+//
+// Header color schemes
+// -----
+// Dark: Green background
+// Light: Transparent background
+//
+header.light {
+  color: $green-forestGreen;
+}
+header.light svg path {
+  fill: $green-forestGreen;
+}
+header.light nav a {
+  color: $green-forestGreen;
   &:hover {
-    color: darken($green-forestGreen,10%);
+    color: lighten($green-forestGreen,10%);
     border-color: transparent;
   }
 }
-header .sign-in {
-  padding: 0 1em;
-  border: 1px solid $green-forestGreen;
-  border-radius: 100px;
+header.dark {
+  color: $white;
+  background: $green-forestGreen;
+}
+header.dark svg path {
+  fill: lighten($green-gumLeaf,20%);
+}
+header.dark .sign-in {
+  background: $green-forestGreen;
+  color: lighten($green-gumLeaf,5%);
+  border: 1px solid $green-gumLeaf;
   &:hover {
-    background: lighten($green-gumLeaf,20%);
-    border-color: $green-forestGreen;
+    background: $green-gumLeaf;
+  }
+}
+header.dark nav a {
+  color: $green-gumLeaf;
+  &:hover {
+    color: $white;
+    border-color: transparent;
   }
 }

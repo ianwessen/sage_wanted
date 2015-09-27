@@ -1,3 +1,17 @@
-<section class="welcome-hero wrapper">
-  <h5>Behold! A Working Landing Page.</h5>
-</section>
+<div class="welcome-hero page">
+  <div class="side-pane">
+    <div class="form-wrapper">
+      <h5>Coming Soon</h5>
+      <p>Leave your email so you can be notified when we launch, and qualify for early interest perks</p>
+      <h6>Awesome! We'll reach out to you when we launch</h6>
+      <%= form_for @sign_up, remote: true, url: {controller: "sign_up", action: "create"}, html: {class: "sign-up"} do |s| %>
+        <%= s.email_field :email %>
+        <br>
+        <%= s.submit "Sign Me Up", class: "button button-primary" %>
+      <% end %>
+    </div>
+  </div><!-- side-pane -->
+  <div class="side-pane">
+    <%= image_tag('sw_network_bkg', class: 'sw-network', alt: 'Sage Wanted Network') %>
+  </div><!-- side-pane -->
+</div>
