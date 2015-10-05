@@ -56,8 +56,14 @@ header nav a {
 header.light {
   color: $green-forestGreen;
 }
+header.light svg {
+  display: inline-block;
+  padding: 0px 20px;
+  background: $green-forestGreen;
+  border-top: 5px solid $white;
+}
 header.light svg path {
-  fill: $green-forestGreen;
+  fill: $white;
 }
 header.light nav a {
   color: $green-forestGreen;

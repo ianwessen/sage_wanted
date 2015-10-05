@@ -10,6 +10,7 @@ footer {
   padding: 0 1em;
   width: 100%;
   color: lighten($green-gumLeaf, 10%);
+  text-align: center;
   background: $green-forestGreen;
 }
 footer a {
@@ -20,14 +21,14 @@ footer a {
 }
 footer div {
   @include container(960px);
-  height: $footer-height;
 }
-footer span {
+footer span.copyright {
   float: right;
   line-height: $footer-height;
 }
 footer nav {
   float: left;
+  height: $footer-height;
 }
 footer ul {
   list-style-type: none;
@@ -38,4 +39,17 @@ footer li {
   display: inline-block;
   line-height: $footer-height;
   padding: 0 0.5em;
+}
+
+@media (max-width: 600px) {
+  footer nav,
+  footer span.copyright {
+    float: none;
+  }
+  footer nav {
+    height: $footer-height/2;
+  }
+  footer span.copyright {
+    line-height: $footer-height/4;
+  }
 }

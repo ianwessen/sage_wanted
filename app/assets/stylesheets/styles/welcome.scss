@@ -16,7 +16,7 @@
   float: left;
 }
 .welcome-hero .side-pane:first-child {
-  padding-top: 15vh;
+  padding-top: 12vh;
 }
 .welcome-hero .side-pane:last-child {
 
@@ -35,8 +35,11 @@
   p {
     margin-bottom: 1em;
   }
-  h5 {
+  h3 {
+    margin-bottom: 0.2em;
     color: $green-forestGreen;
+    font-size: 56px;
+    font-weight: bold;
   }
   h6 {
     @include abs-center(180px);

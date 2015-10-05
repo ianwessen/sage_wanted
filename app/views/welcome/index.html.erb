@@ -1,15 +1,25 @@
 <div class="welcome-hero page">
   <div class="side-pane">
     <div class="form-wrapper">
-      <h5>Coming Soon</h5>
+      <h3>Coming Soon</h3>
       <p>Leave your email so you can be notified when we launch, and qualify for early interest perks</p>
-      <h6>Awesome! We'll reach out to you when we launch</h6>
-      <%= form_for @sign_up, remote: true, url: {controller: "sign_up", action: "create"}, html: {class: "sign-up"} do |s| %>
+      <h6>Success!</h6>
+      <%= form_for @sign_up, url: {controller: "sign_up", action: "create"}, html: {class: "sign-up"} do |s| %>
         <%= s.email_field :email %>
         <br>
         <%= s.submit "Sign Me Up", class: "button button-primary" %>
       <% end %>
-    </div>
+      <% if flash[:success] %>
+        <div class="application-flash success">
+          <%= flash[:success] %>
+        </div>
+      <% end %>
+      <% if flash[:error] %>
+        <div class="application-flash error">
+          <%= flash[:error] %>
+        </div>
+      <% end %>
+    </div><!-- form-wrapper -->
   </div><!-- side-pane -->
   <div class="side-pane">
     <%= image_tag('sw_network_bkg', class: 'sw-network', alt: 'Sage Wanted Network') %>
