@@ -16,7 +16,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6em;
   font-weight: 400;
-  font-family: "Avenir Book", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $gray-charcoal;
 }
 
@@ -25,7 +25,7 @@ html, body {
 }
 
 *, *:before, *:after {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .page {
@@ -34,8 +34,8 @@ html, body {
   padding: $header-height 0 $footer-height 0;
 }
 
-/* 
- * Grid (SUSY) 
+/*
+ * Grid (SUSY)
  */
 // Note this is a SASS list, check the syntax
 $susy: (
@@ -46,8 +46,8 @@ $susy: (
   gutter-position: inside,
 );
 
-/* 
- * Typography 
+/*
+ * Typography
  */
 @font-face {
   font-family: 'Avenir Book';
@@ -65,7 +65,7 @@ $susy: (
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; 
+  font-weight: 300;
 }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
@@ -89,14 +89,14 @@ p {
 
 a {
   display: inline-block;
-  color: $green-forestGreen; 
+  color: $forest-green;
   text-decoration: none;
   line-height: 0.85em;
   border-bottom: 2px solid transparent;
   transition: 0.3s;
 }
 a:hover {
-  border-color: $green-forestGreen;
+  border-color: $forest-green;
 }
 
 hr {
@@ -121,9 +121,9 @@ hr {
   border-color: $red-moccaccino;
 }
 .application-flash.success {
-  background: $green-gumLeaf;
+  background: $gum-leaf;
   color: $white;
-  border-color: $green-forestGreen;
+  border-color: $forest-green;
 }
 /*
  * Buttons
@@ -169,9 +169,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: $green-forestGreen;
+  color: $forest-green;
   background-color: $white;
-  border-color: $green-forestGreen; }
+  border-color: $forest-green; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -183,11 +183,11 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: $green-forestGreen;
-  border-color: $green-forestGreen; }
+  background-color: $forest-green;
+  border-color: $forest-green; }
 
 
-/* 
+/*
  * Forms
  */
 input[type="email"],
@@ -250,8 +250,8 @@ label > .label-body {
   font-weight: normal; }
 
 
-/* 
- * Lists 
+/*
+ * Lists
  */
 ul {
   list-style: circle inside; }
@@ -270,8 +270,8 @@ li {
   margin-bottom: 1rem; }
 
 
-/* 
- * Code 
+/*
+ * Code
  */
 code {
   padding: .2rem .5rem;
@@ -287,8 +287,8 @@ pre > code {
   white-space: pre; }
 
 
-/* 
- * Tables 
+/*
+ * Tables
  */
 th,
 td {
@@ -303,8 +303,8 @@ td:last-child {
   padding-right: 0; }
 
 
-/* 
- * Spacing 
+/*
+ * Spacing
  */
 button,
 .button {

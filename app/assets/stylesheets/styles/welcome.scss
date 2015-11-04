@@ -37,14 +37,14 @@
   }
   h3 {
     margin-bottom: 0.2em;
-    color: $green-forestGreen;
+    color: $forest-green;
     font-size: 56px;
     font-weight: bold;
   }
   h6 {
     @include abs-center(180px);
     bottom: -20px;
-    color: $green-forestGreen;
+    color: $forest-green;
     opacity: 0;
     transition: 0.3s;
     cursor: default;
@@ -57,7 +57,7 @@ form.sign-up {
     width: 80%;
     border: 0;
     border-radius: 0;
-    border-bottom: 1px solid $green-forestGreen;
+    border-bottom: 1px solid $forest-green;
   }
 }
 form.sign-up.complete {
@@ -73,6 +73,6 @@ form.sign-up.complete {
     display: none;
   }
   .welcome-hero .form-wrapper {
-    
+
   }
 }

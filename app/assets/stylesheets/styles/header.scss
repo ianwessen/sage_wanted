@@ -5,46 +5,59 @@ $header-height: 50px;
 header {
   position: absolute;
   z-index: 10;
+  width: 100%;
   height: $header-height;
   padding: 0 1em;
-  width: 100%;
   background: transparent;
-}
-header > div {
-  @include container(960px);
-  height: $header-height;
-}
-header svg {
-  float: left;
-  width: 200px;
-  height: $header-height;
-}
-header .sw-logo span:first-of-type {
-  font-weight: bold;
-}
-header nav {
-  float: right;
-}
-header,
-footer {
-  ul, 
+
+  > div {
+    @include container(960px);
+    height: $header-height;
+  }
+
+  svg {
+    float: left;
+    width: 200px;
+    height: $header-height;
+  }
+
+  .sw-logo span:first-of-type {
+    font-weight: bold;
+  }
+
+  .sw-link {
+    border: 0;
+
+    &:hover {
+      border: 0;
+    }
+  }
+
+  nav {
+    float: right;
+  }
+
+  ul,
   li {
     padding: 0;
     margin: 0;
   }
-}
-header ul {
-  list-style-type: none;
-}
-header li {
-  display: inline-block;
-  padding: 0 0.5em;
-  line-height: $header-height;
-  transition: 0.3s;
-}
-header nav a {
-  padding: 0 0.3em;
-  line-height: $header-height/1.5;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 0.5em;
+    line-height: $header-height;
+    transition: 0.3s;
+  }
+
+  nav a {
+    padding: 0 0.3em;
+    line-height: $header-height/1.5;
+  }
 }
 
 //
@@ -54,41 +67,48 @@ header nav a {
 // Light: Transparent background
 //
 header.light {
-  color: $green-forestGreen;
+  color: $forest-green;
 }
+
 header.light svg {
   display: inline-block;
   padding: 0px 20px;
-  background: $green-forestGreen;
+  background: $forest-green;
   border-top: 5px solid $white;
 }
+
 header.light svg path {
   fill: $white;
 }
+
 header.light nav a {
-  color: $green-forestGreen;
+  color: $forest-green;
   &:hover {
-    color: lighten($green-forestGreen,10%);
+    color: lighten($forest-green,10%);
     border-color: transparent;
   }
 }
+
 header.dark {
   color: $white;
-  background: $green-forestGreen;
+  background: $forest-green;
 }
+
 header.dark svg path {
-  fill: lighten($green-gumLeaf,20%);
+  fill: lighten($gum-leaf,20%);
 }
+
 header.dark .sign-in {
-  background: $green-forestGreen;
-  color: lighten($green-gumLeaf,5%);
-  border: 1px solid $green-gumLeaf;
+  background: $forest-green;
+  color: lighten($gum-leaf,5%);
+  border: 1px solid $gum-leaf;
   &:hover {
-    background: $green-gumLeaf;
+    background: $gum-leaf;
   }
 }
+
 header.dark nav a {
-  color: $green-gumLeaf;
+  color: $gum-leaf;
   &:hover {
     color: $white;
     border-color: transparent;
