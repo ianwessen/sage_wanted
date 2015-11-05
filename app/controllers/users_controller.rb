@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.save
+      log_in @user # log_in method defined in session_helper.rb
       redirect_to @user
     else
       flash.now[:error] = @user.errors.full_messages.join('. ')

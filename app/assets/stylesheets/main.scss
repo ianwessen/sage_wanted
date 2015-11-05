@@ -7,6 +7,7 @@
 @import "styles/header.scss";
 @import "styles/footer.scss";
 @import "styles/users.scss";
+@import "styles/sessions.scss";
 
 html {
   font-size: 62.5%;
@@ -97,9 +98,8 @@ a {
   display: inline-block;
   color: $forest-green;
   text-decoration: none;
-  line-height: 0.85em;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
+  line-height: 1em;
+  border-bottom: 1px solid transparent;
 }
 a:hover {
   border-color: $forest-green;
@@ -358,7 +358,6 @@ form {
   max-width: 100%;
   padding: 0 2em;
   color: $red;
-  text-align: center;
   background: transparent;
   opacity: .2;
   box-sizing: border-box;

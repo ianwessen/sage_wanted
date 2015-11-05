@@ -57,6 +57,7 @@ header {
     padding: 0 1.5em;
     border-radius: 1000px;
     border: 1px solid $gum-leaf;
+    transition: 0.2s;
 
     &:hover {
       border-color: $forest-green;

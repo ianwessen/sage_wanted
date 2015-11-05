@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-
-
   root 'welcome#index'
 
   get 'about' => 'static_pages#about'
@@ -8,9 +6,11 @@ Rails.application.routes.draw do
   get 'terms' => 'static_pages#terms'
   get 'privacy' => 'static_pages#privacy'
 
-  get '/signup' => 'users#new'
+  get 'signup' => 'users#new'
 
-  # get 'login' => 'users#new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
 
   resources :users
 
