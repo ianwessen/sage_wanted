@@ -18,7 +18,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6em;
   font-weight: 400;
-  font-family: "Avenir Next", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $gray-charcoal;
 }
 
@@ -54,13 +54,13 @@ $susy: (
  * Typography
  */
 @font-face {
-  font-family: 'Avenir Book';
+  font-family: 'Avenir';
   src: asset-url('Avenir-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Avenir Book';
+  font-family: 'Avenir';
   src: asset-url('Avenir-Black.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
