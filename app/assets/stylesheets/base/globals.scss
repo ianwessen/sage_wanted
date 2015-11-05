@@ -1,14 +1,18 @@
 
-
 // Colors
-$red-moccaccino:      #57302D;
-$red-turkishRose:     #A27572;
-$gum-leaf:       #A3CCB2;
-$forest-green:   #6FAA86;
-$gray-charcoal:       #404040;
-$white:               #fff;
-$black:               #000;
 
+// Primary pallette
+$gum-leaf: #a3ccb2;
+$forest-green: #6faa86;
+
+// Secondary pallette
+$red: #f56868;
+
+// Utilities
+$silver: #999;
+$gray-charcoal: #404040;
+$white: #fff;
+$black: #000;
 
 // Mixins
 @mixin abs-center($width) {

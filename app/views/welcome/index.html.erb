@@ -1,26 +1,25 @@
 
-<div class="welcome-hero page">
+<div class="welcome-hero">
 
   <div class="side-pane">
     <div class="form-wrapper">
       <h3>Coming Soon</h3>
-      <p>Leave your email so you can be notified when we launch, and qualify for early interest perks</p>
-      <h6>Success!</h6>
-      <%= form_for @sign_up, url: {controller: "sign_up", action: "create"}, html: {class: "sign-up"} do |s| %>
-        <%= s.email_field :email %>
-        <br>
-        <%= s.submit "Sign Me Up", class: "button button-primary" %>
-      <% end %>
-      <% if flash[:success] %>
-        <div class="application-flash success">
-          <%= flash[:success] %>
-        </div>
-      <% end %>
-      <% if flash[:error] %>
-        <div class="application-flash error">
-          <%= flash[:error] %>
-        </div>
-      <% end %>
+      <h5>Pardon our dust! </h5>
+      <p>We're currently under construction, but please make an account and we'll email you when we're ready to launch our beta.</p>
+      <%# form_for @sign_up, url: {controller: "sign_up", action: "create"}, html: {class: "sign-up"} do |s| %>
+        <%# s.email_field :email %>
+        <%# s.submit "Register Early", class: "button button-primary" %>
+      <%# end %>
+      <%# if flash[:success] %>
+        <!-- <div class="application-flash success"> -->
+          <%# flash[:success] %>
+        <!-- </div> -->
+      <%# end %>
+      <%# if flash[:error] %>
+        <!-- <div class="application-flash error"> -->
+          <%# flash[:error] %>
+        <!-- </div> -->
+      <%# end %>
     </div><!-- form-wrapper -->
   </div><!-- side-pane -->
 

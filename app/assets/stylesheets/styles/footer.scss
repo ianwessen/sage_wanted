@@ -1,44 +1,46 @@
 @import 'susy';
 
-$footer-height: 80px;
-
 footer {
-  position: absolute;
-  z-index: 10;
-  bottom: 0;
-  height: $footer-height;
-  padding: 0 1em;
   width: 100%;
   color: lighten($gum-leaf, 10%);
   text-align: center;
   background: $forest-green;
 }
+
 footer a {
   color: lighten($gum-leaf, 10%);
+  line-height: 1.2em;
   &:hover {
     color: #fff;
   }
 }
-footer div {
+
+footer > div {
   @include container(960px);
+  padding: 0 2em;
 }
+
 footer span.copyright {
   float: right;
-  line-height: $footer-height;
+  line-height: 60px;
 }
+
 footer nav {
   float: left;
-  height: $footer-height;
+  height: 60px;
 }
+
 footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 footer li {
   display: inline-block;
-  line-height: $footer-height;
-  padding: 0 0.5em;
+  line-height: 60px;
+  padding: 0 .5em;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -46,10 +48,12 @@ footer li {
   footer span.copyright {
     float: none;
   }
+
   footer nav {
-    height: $footer-height/2;
+    height: 60px/4;
   }
+
   footer span.copyright {
-    line-height: $footer-height/4;
+    line-height: 60px/4;
   }
 }

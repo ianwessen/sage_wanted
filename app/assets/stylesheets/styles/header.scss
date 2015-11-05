@@ -1,24 +1,18 @@
 @import 'susy';
 
-$header-height: 50px;
-
 header {
-  position: absolute;
-  z-index: 10;
   width: 100%;
-  height: $header-height;
   padding: 0 1em;
   background: transparent;
 
   > div {
     @include container(960px);
-    height: $header-height;
   }
 
   svg {
     float: left;
     width: 200px;
-    height: $header-height;
+    height: 50px;
   }
 
   .sw-logo span:first-of-type {
@@ -45,72 +39,66 @@ header {
 
   ul {
     list-style-type: none;
+    margin-top: 0.6em;
   }
 
   li {
     display: inline-block;
-    padding: 0 0.5em;
-    line-height: $header-height;
-    transition: 0.3s;
+    padding: 0 .5em;
+    // transition: .3s;
   }
 
   nav a {
     padding: 0 0.3em;
-    line-height: $header-height/1.5;
+    line-height: 2.4em;
+  }
+
+  .sign-up {
+    padding: 0 1.5em;
+    border-radius: 1000px;
+    border: 1px solid $gum-leaf;
+
+    &:hover {
+      border-color: $forest-green;
+      background: $gum-leaf;
+      color: $white;
+    }
   }
 }
 
-//
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header .sw-link,
+  header nav ul {
+    display: inline-block;
+  }
+}
 // Header color schemes
-// -----
-// Dark: Green background
-// Light: Transparent background
-//
-header.light {
+header {
   color: $forest-green;
 }
 
-header.light svg {
+header svg {
   display: inline-block;
   padding: 0px 20px;
-  background: $forest-green;
   border-top: 5px solid $white;
 }
 
-header.light svg path {
-  fill: $white;
+header svg path {
+  fill: $forest-green;
 }
 
-header.light nav a {
+header nav a {
   color: $forest-green;
   &:hover {
     color: lighten($forest-green,10%);
-    border-color: transparent;
-  }
-}
-
-header.dark {
-  color: $white;
-  background: $forest-green;
-}
-
-header.dark svg path {
-  fill: lighten($gum-leaf,20%);
-}
-
-header.dark .sign-in {
-  background: $forest-green;
-  color: lighten($gum-leaf,5%);
-  border: 1px solid $gum-leaf;
-  &:hover {
-    background: $gum-leaf;
-  }
-}
-
-header.dark nav a {
-  color: $gum-leaf;
-  &:hover {
-    color: $white;
     border-color: transparent;
   }
 }

@@ -4,27 +4,29 @@
 
 @import 'susy';
 
-.welcome-hero.page {
-  text-align: center;
+.welcome-hero {
   @include container(960px);
+  padding-bottom: 200px;
 }
-.welcome-hero .animation {
-  position: absolute;
-}
+
 .welcome-hero .side-pane {
   width: 50%;
   float: left;
 }
+
 .welcome-hero .side-pane:first-child {
   padding-top: 12vh;
 }
+
 .welcome-hero .side-pane:last-child {
 
 }
+
 .welcome-hero .sw-network {
   max-width: 90%;
   margin: 100px auto 0;
 }
+
 .welcome-hero .form-wrapper {
   position: relative;
   margin: 0 auto;
@@ -32,38 +34,41 @@
   width: 480px;
   max-width: 100%;
   background: $white;
+
+  h3 {
+    // Coming Soon
+    margin: 0;
+    font-size: 56px;
+    font-weight: bold;
+    color: $gum-leaf;
+  }
+
+  h5 {
+    // Pardon our dist
+    color: $forest-green;
+    margin: 0 0 0.75em;
+  }
+
   p {
     margin-bottom: 1em;
   }
-  h3 {
-    margin-bottom: 0.2em;
-    color: $forest-green;
-    font-size: 56px;
-    font-weight: bold;
-  }
-  h6 {
-    @include abs-center(180px);
-    bottom: -20px;
-    color: $forest-green;
-    opacity: 0;
-    transition: 0.3s;
-    cursor: default;
-  }
 }
-form.sign-up {
-  opacity: 1;
-  transition: 0.3s;
-  input[type="email"] {
-    width: 80%;
-    border: 0;
-    border-radius: 0;
-    border-bottom: 1px solid $forest-green;
-  }
-}
-form.sign-up.complete {
-  opacity: 0;
-  transform: translateY(-20px);
-}
+
+// form.sign-up {
+//   opacity: 1;
+//   transition: 0.3s;
+//   input[type="email"] {
+//     width: 80%;
+//     border: 0;
+//     border-radius: 0;
+//     border-bottom: 1px solid $forest-green;
+//   }
+// }
+
+// form.sign-up.complete {
+//   opacity: 0;
+//   transform: translateY(-20px);
+// }
 
 @media (max-width: 800px) {
   .welcome-hero .side-pane:first-child {

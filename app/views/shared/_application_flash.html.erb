@@ -1,0 +1,14 @@
+<!-- DRY up your flash error handling; this is useless (for now) -->
+<% if flash %>
+  <div class="application-flash <%= flash_type %>">
+    <div>
+      <% if flash_type = 'success' %>
+        <%= flash[:success] %>
+      <% elsif flash_type = 'error' %>
+        <%= flash[:error] %>
+      <% else %>
+        <%= flash[:notice] %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
