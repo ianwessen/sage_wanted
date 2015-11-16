@@ -14,7 +14,7 @@ module SageWanted
 
     # Enable Heroku to serve static assets described here:
     # (https://devcenter.heroku.com/articles/rails-4-asset-pipeline)
-    config.serve_static_assets = true
+    config.serve_static_files = true
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
