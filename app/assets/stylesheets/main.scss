@@ -8,6 +8,7 @@
 @import "styles/footer.scss";
 @import "styles/users.scss";
 @import "styles/sessions.scss";
+@import "styles/static_pages.scss";
 
 html {
   font-size: 62.5%;
@@ -15,11 +16,11 @@ html {
 
 body {
   position: relative;
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6em;
   font-weight: 400;
   font-family: "Avenir", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: $gray-charcoal;
+  color: $charcoal;
 }
 
 html,
@@ -34,8 +35,12 @@ body {
 }
 
 .page {
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
+
+  > div {
+    @include container(960px);
+  }
 }
 
 /*
@@ -72,7 +77,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
+  font-weight: 400;
+  margin: 1.333em 0 .5em;
 }
 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
@@ -96,9 +102,9 @@ p {
 
 a {
   display: inline-block;
+  line-height: 1em;
   color: $forest-green;
   text-decoration: none;
-  line-height: 1em;
   border-bottom: 1px solid transparent;
 }
 a:hover {
@@ -108,8 +114,9 @@ a:hover {
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
+  border-top: 1px solid #E1E1E1;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+}
 
 /*
  * Alerts (namely, Flash messages)
@@ -359,7 +366,7 @@ form {
   padding: 0 2em;
   color: $red;
   background: transparent;
-  opacity: .2;
+  opacity: .4;
   box-sizing: border-box;
 
   &:hover {

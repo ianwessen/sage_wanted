@@ -9,29 +9,7 @@ $forest-green: #6faa86;
 $red: #f56868;
 
 // Utilities
-$silver: #999;
-$gray-charcoal: #404040;
 $white: #fff;
-$black: #000;
-
-// Mixins
-@mixin abs-center($width) {
-  position: absolute;
-  width: $width;
-  left: 50%;
-  margin-left: -($width)/2;
-}
-
-// Typography
-@font-face {
-    font-family: 'Avenir Book';
-    src: asset-url('Avenir-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Avenir Black';
-    src: asset-url('Avenir-Black.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
+$mercury: #e1e1e1;
+$silver: #999;
+$charcoal: #404040;

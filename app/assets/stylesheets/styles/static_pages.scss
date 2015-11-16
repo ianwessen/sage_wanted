@@ -1,3 +1,41 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about.page {
+
+  .body {
+    @include container(40em);
+    padding: 2em 0 4em;
+  }
+
+  h3 {
+    // "About" Title
+    font-weight: bold;
+    color: $gum-leaf;
+  }
+}
+
+.terms.page {
+
+  .body {
+    @include container(40em);
+    padding: 4em 0;
+  }
+
+  h4 {
+    // Terms and Privacy
+    font-weight: bold;
+    color: $gum-leaf;
+  }
+
+  h5 {
+    // Section headings
+    color: $forest-green;
+  }
+
+  ul,
+  ol {
+    padding-left: 1em;
+  }
+}

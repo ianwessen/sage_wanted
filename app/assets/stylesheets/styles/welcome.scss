@@ -10,8 +10,8 @@
 }
 
 .welcome-hero .side-pane {
-  width: 50%;
   float: left;
+  width: 50%;
 }
 
 .welcome-hero .side-pane:first-child {
@@ -29,10 +29,10 @@
 
 .welcome-hero .form-wrapper {
   position: relative;
-  margin: 0 auto;
-  padding: 3em 4em 1em;
   width: 480px;
   max-width: 100%;
+  padding: 3em 4em 1em;
+  margin: 0 auto;
   background: $white;
 
   h3 {
@@ -45,30 +45,14 @@
 
   h5 {
     // Pardon our dist
+    margin: 0 0 .75em;
     color: $forest-green;
-    margin: 0 0 0.75em;
   }
 
   p {
     margin-bottom: 1em;
   }
 }
-
-// form.sign-up {
-//   opacity: 1;
-//   transition: 0.3s;
-//   input[type="email"] {
-//     width: 80%;
-//     border: 0;
-//     border-radius: 0;
-//     border-bottom: 1px solid $forest-green;
-//   }
-// }
-
-// form.sign-up.complete {
-//   opacity: 0;
-//   transform: translateY(-20px);
-// }
 
 @media (max-width: 800px) {
   .welcome-hero .side-pane:first-child {
