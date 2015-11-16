@@ -2,14 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import 'susy';
+@import "base/mixins";
+@import "base/globals";
+@import "susy";
 
 .application-flash {
   position: absolute;
-  height: $header-height;
+  // height: $header-height;
   z-index: 100;
   width: 100%;
   @include container(960px);
   text-align: center;
-  line-height: $header-height;
+  // line-height: $header-height;
 }

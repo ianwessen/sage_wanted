@@ -1,14 +1,30 @@
-@import "base/mixins.scss";
-@import "base/normalize.scss";
-@import "base/globals.scss";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "base/mixins";
+@import "base/globals";
 @import "susy";
+
 // Controller specific styles
-@import "styles/welcome.scss";
-@import "styles/header.scss";
-@import "styles/footer.scss";
-@import "styles/users.scss";
-@import "styles/sessions.scss";
-@import "styles/static_pages.scss";
+// @import "styles/welcome.scss";
+// @import "styles/header.scss";
+// @import "styles/footer.scss";
+// @import "styles/users.scss";
+// @import "styles/sessions.scss";
+// @import "styles/static_pages.scss";
 
 html {
   font-size: 62.5%;
